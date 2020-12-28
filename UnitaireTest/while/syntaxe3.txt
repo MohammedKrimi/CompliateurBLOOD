@@ -1,0 +1,13 @@
+//false
+{
+
+while Integer : True do True := True + 1;
+while : Integer do True := True + 1;
+while do True do True := True +1;
+do True while True:= True +1;
+True := True +1 while False do False := True;
+while while True do False:= True;
+do while True;
+while True do do 
+
+}

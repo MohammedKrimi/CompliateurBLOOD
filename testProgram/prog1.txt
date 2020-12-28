@@ -1,0 +1,14 @@
+//true
+
+
+class Point( var xc : Integer, var yc : Integer, var name : String) is 
+{
+	def Point (var x : Integer,var x : Integer) is {}
+}
+
+
+
+
+
+
+

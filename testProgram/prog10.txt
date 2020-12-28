@@ -1,0 +1,10 @@
+//true
+class Point(var x: Integer, var y: Interger) is {
+	var static next : Integer := 0;
+
+	def Point(var x: Integer, var y: Interger) is {
+		 next : Integer := 0;
+	}
+
+	var pt : Point := new Point(5, 0);
+}

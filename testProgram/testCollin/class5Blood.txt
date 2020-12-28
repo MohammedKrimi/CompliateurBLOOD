@@ -1,0 +1,13 @@
+//true
+
+class PointNoir(xc: Integer, yc:Integer) extends PointColore is 
+{
+	def PointNoir(xc: Integer, yc: Integer) : 
+		PointColore(xc, yc, CouleurFactory.noir() ) is {}
+
+	/* exemples de methodes redefinis */
+	
+	def override estGris() : Integer := 0;
+	def override colore() : Integer := 1;
+	def override couleur() : Couleur := CouleurFactory.noir();
+}

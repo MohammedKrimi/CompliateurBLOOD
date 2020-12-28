@@ -1,0 +1,8 @@
+//false
+class Point(var x: Integer, var y: Integer, var name: String)  
+{ 
+var static next: Integer := 0; 
+def Point(var x: Integer, var y: Integer, var name: String) is { this.next := this.next +1;}
+def setName(s: Integer, Integer : a, dx : Integer := 1, dy := Integer) is 
+ { this.next := this.next +1;}
+}

@@ -1,0 +1,7 @@
+//true
+{
+ ida: Integer := 1;
+ idb: Integer := 2;
+ idc: Integer := 1;
+idc := ida * idb + ida;
+}

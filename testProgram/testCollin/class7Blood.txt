@@ -1,0 +1,30 @@
+//true
+
+class Test() is { 
+	def Test() is {}
+	def static test(p: Point, p2: PointColore, p3: PointNoire) is {
+	
+		c: String; c2: String; c3: String;
+		
+		true: Integer := 1;
+		false: Integer := 0;
+		
+		p.print(true);	
+		p2.print(true);
+		if p2.colore() <> 0 then c := "colore"; else c:= "gris";
+		if p3.colore() <> 0 then c2 := "colore"; else c2 :="gris";
+		if p2.colore() <> 0 then c3 := "colore"; else c3 := "gris";
+		
+		"Resultats de test:".println();
+			
+		c.print(); " ".print();
+		c2.print(); " ".print();
+		c3.print();
+		"".println(); /* ligne vide*/
+	}
+
+	def static test2(p: PointColore) is {
+		p.couleur().name(0).print();
+	}
+ 
+}

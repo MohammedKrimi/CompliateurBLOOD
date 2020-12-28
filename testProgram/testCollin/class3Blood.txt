@@ -1,0 +1,15 @@
+//true
+
+class CouleurFactory() is 
+{
+	var static theBlanc: Couleur := new Couleur(0);
+	var static theNoir : Couleur := new Couleur(1);
+	var static theGris: Couleur := new Couleur(2);
+		
+
+	def CouleurFactory() is {}
+
+		def static blanc() : Couleur := this.theBlanc;
+		def static noir() : Couleur := this.theNoir;
+		def static gris() : Couleur := this.theGris;
+}

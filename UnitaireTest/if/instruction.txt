@@ -1,0 +1,9 @@
+//false
+{
+if true then sta:= "Coucou" else sta:= "CC";
+if true then sta := "Coucou; else sta:= "CC"
+}
+
+
+
+

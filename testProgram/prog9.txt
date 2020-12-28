@@ -1,0 +1,12 @@
+//true
+class Test(var x: Integer) extends String is {
+
+var ida: Integer; 
+
+var idb: Integer := 1;
+
+def Test(var c: Integer) : Test(xc) is {ida+2;}
+
+def test2(var c: Integer) : Test := idb+2; 
+
+}

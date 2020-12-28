@@ -1,0 +1,11 @@
+//true
+{
+ a : Integer := 1;
+ b : Integer;
+ c : Integer;
+
+a:= b;
+b:=c;
+c:=a;
+
+}

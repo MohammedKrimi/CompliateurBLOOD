@@ -1,0 +1,11 @@
+//true
+
+
+
+{
+
+ ida: Integer; 
+ idb: Integer := 1;
+ida := 2 + idb;
+		
+}

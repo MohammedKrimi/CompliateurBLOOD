@@ -1,0 +1,6 @@
+//false
+{
+While True do True := True + 1;
+whle True do True := True + 1;
+True do True := True + 1;
+}

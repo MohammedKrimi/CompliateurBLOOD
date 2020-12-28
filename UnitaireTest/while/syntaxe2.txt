@@ -1,0 +1,6 @@
+//false
+{
+while True Do True := True + 1;
+while True doo True := True + 1;
+while True True := True + 1;
+}

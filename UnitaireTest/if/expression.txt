@@ -1,0 +1,12 @@
+//false
+{
+var true : Integer := 1;
+var false : Integer := 0;
+
+var sta : String;
+var stb: String; 
+
+
+if true := 2; then sta:= "a"; else sta:="b";
+
+}

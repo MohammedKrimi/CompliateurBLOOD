@@ -1,0 +1,18 @@
+//true
+{
+	 p : Point;
+	p.show();
+	p.setX(3);
+	p.setXY(5, 10);
+
+    // comment1
+    // comment2
+    // comment1 // comment2
+    /** comment **/
+    /**
+    com
+    ment
+    **/
+
+    p2 : Point := 3;
+}

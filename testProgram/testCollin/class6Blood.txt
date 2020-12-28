@@ -1,0 +1,10 @@
+//true
+
+class DefaultPoint() extends PointColore is {
+		
+	def DefaultPoint() : PointColore(0,0,CouleurFactory.blanc() ) is {}
+		
+	def override estGris() : Integer := 0;
+	def override couleur() : Couleur := CouleurFactory.blanc();
+
+}

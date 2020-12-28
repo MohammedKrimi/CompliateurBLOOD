@@ -1,0 +1,18 @@
+//true
+{
+if False 
+       then if True 
+             then if False 
+                     then sta:=”yo”;
+                     else sta:=”rog”;
+             else if True 
+                     then stb:=”ee”;
+                     else stb:= “ff”;
+        else if True 
+              then if True
+                     then stb:=”gg”;
+                     else stb := “hh”;
+              else if False
+		     then sta:="oui";
+		     else stab:="non";
+}

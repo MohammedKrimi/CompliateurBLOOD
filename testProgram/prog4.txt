@@ -1,0 +1,11 @@
+//true
+{
+ vrai : Integer := 1;
+ test : Integer := 2;
+if vrai then test:=test=1; else test:=test-1;
+
+}
+
+
+
+

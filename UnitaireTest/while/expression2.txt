@@ -1,0 +1,4 @@
+//false
+{
+while str do str := “pas coucou”;
+}

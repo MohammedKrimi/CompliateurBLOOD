@@ -1,0 +1,10 @@
+//true
+{ 
+if False 
+      then if True 
+               then sta:=”oui”;
+               else sta :=”non”;
+      else if False
+                then sta:=”bof”;
+                else sta :=”bbof”;
+}

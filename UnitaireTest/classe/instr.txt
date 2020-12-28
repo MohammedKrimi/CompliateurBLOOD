@@ -1,0 +1,5 @@
+//false
+{
+while True do {}; 
+while True do this.getx()()();
+}

@@ -1,0 +1,7 @@
+//true
+{
+
+if true then sta := "Coucou"; else sta:= "CC";
+if false then sta:= "Hello"; else sta:="Hel";
+
+}

@@ -1,0 +1,31 @@
+//true 
+
+class PointColore(x: Integer, y:Integer, var coul: Couleur) extends Point is {
+	
+	def PointColore(x: Integer, y:Integer, var coul: Couleur) :
+	Point(x,y, "p-" & CptPoint.howMany().toString() ) is {}
+
+	def couleur() : Couleur := this.coul;
+	
+	def colore() : Integer := this.coul.estGris() <> 0;
+
+	def override clone() : Point is {
+		
+		result := new PointColore(this.x, this.y, this.coul);
+		result.setName(this.name & "'");
+		this.hasClone := 1;
+		this.clone := result;
+	}
+
+		
+	def estGris() : Integer := this.coul.estGris();
+		
+
+		def override print(verbose : Integer) is 
+		{
+			if verbose then "Inside PointColore::print".println();
+			else {}
+				super.print(verbose);
+				this.couleur().name(verbose).println();
+		}
+}

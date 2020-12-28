@@ -1,0 +1,8 @@
+//true
+{
+while True do {}
+while True do this
+while True do super;
+while True do result;
+while True do this.getx();
+}

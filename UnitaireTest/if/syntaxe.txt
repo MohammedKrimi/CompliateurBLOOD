@@ -1,0 +1,7 @@
+//false
+{ 
+
+if true else sta:="b";
+if true then sta:="b";
+
+}

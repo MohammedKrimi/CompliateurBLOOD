@@ -1,0 +1,149 @@
+##############################################
+################################### test while
+##############################################
+
+test_while_expr: 
+  stage: test_unitaire
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "UnitaireTest/while/expression.txt"
+
+test_while_expr2: 
+  stage: test_unitaire
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "UnitaireTest/while/expression2.txt"
+
+test_while_synt: 
+  stage: test_unitaire
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "UnitaireTest/while/syntaxe.txt"
+
+test_while_synt2: 
+  stage: test_unitaire
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "UnitaireTest/while/syntaxe2.txt"
+
+test_while_synt3: 
+  stage: test_unitaire
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "UnitaireTest/while/syntaxe3.txt"
+
+test_while_valid: 
+  stage: test_unitaire
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "UnitaireTest/while/valide.txt"
+
+test_while_imb: 
+  stage: test_unitaire
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "UnitaireTest/while/valide1imb.txt"
+
+test_while_imb2: 
+  stage: test_unitaire
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "UnitaireTest/while/validelmbr.txt"
+
+###########################################################################
+if
+######################################################
+
+
+test_if_expression: 
+  stage: test_unitaire
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "UnitaireTest/if/expression.txt"
+
+test_if_instruction: 
+  stage: test_unitaire
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "UnitaireTest/if/instruction.txt"
+
+test_if_sauvage: 
+  stage: test_unitaire
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "UnitaireTest/if/sauvage.txt"
+
+test_if_syntaxe: 
+  stage: test_unitaire
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "UnitaireTest/if/syntaxe.txt"
+
+test_if_valide1imb: 
+  stage: test_unitaire
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "UnitaireTest/if/valide1imb.txt"
+
+test_if_valide2imb: 
+  stage: test_unitaire
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "UnitaireTest/if/valide2imb.txt"
+
+test_if_valideNimb: 
+  stage: test_unitaire
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "UnitaireTest/if/valideNimb.txt"
+
+test_if_valide3imb: 
+  stage: test_unitaire
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "UnitaireTest/if/valide3imb.txt"
+
+
+###################################################
+class
+################################################
+
+test_class_2constr: 
+  stage: test_unitaire
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "UnitaireTest/classe/deuxConstr.txt"
+
+test_class_instr: 
+  stage: test_unitaire
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "UnitaireTest/classe/instr.txt"
+
+test_class_isConstr: 
+  stage: test_unitaire
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "UnitaireTest/classe/isConstruct.txt"
+
+test_class_isManque: 
+  stage: test_unitaire
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "UnitaireTest/classe/isManque.txt"
+
+test_class_majuscule: 
+  stage: test_unitaire
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "UnitaireTest/classe/majuscule.txt"
+
+test_class_paramClass: 
+  stage: test_unitaire
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "UnitaireTest/classe/paramaetreClass.txt"
+
+test_class_paramConstr: 
+  stage: test_unitaire
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "UnitaireTest/classe/parametreConstr.txt"
+
+test_class_paramMeth: 
+  stage: test_unitaire
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "UnitaireTest/classe/parametreMethode.txt"
+
+test_class_pasConstr: 
+  stage: test_unitaire
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "UnitaireTest/classe/pasConstr.txt"
+
+
+test_class_valide: 
+  stage: test_unitaire
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "UnitaireTest/classe/valide.txt"
+
+test_class_valide2: 
+  stage: test_unitaire
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "UnitaireTest/classe/valide2.txt"

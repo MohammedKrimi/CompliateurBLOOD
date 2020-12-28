@@ -1,0 +1,11 @@
+//true
+{
+vrai: Integer :=2;
+
+while vrai do vrai := vrai+2;
+
+}
+
+
+
+

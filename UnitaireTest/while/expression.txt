@@ -1,0 +1,10 @@
+//false
+{
+
+
+while False:= False + 1; do False:= False - 1;
+while var Tr : Integer; do False:= False - 1;
+while var Tre : Integer do False:= False - 1;
+while var vrai : Integer := 1; do vrai := vrai + 1;
+while var vrai : Integer := 1 do vrai := vrai + 1;
+}

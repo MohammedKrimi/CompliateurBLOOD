@@ -1,0 +1,10 @@
+//true
+
+class A() is {
+	
+	var v : Integer;
+
+	def A() is { this.v := 1; }
+	def f() is { "A::f()\n".print(); }
+	def h(x: Integer, y: Integer) : Integer := x + y;
+}

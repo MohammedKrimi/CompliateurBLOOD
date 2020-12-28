@@ -1,0 +1,32 @@
+//true
+
+class Couleur(var coul: Integer) is {
+	
+	def Couleur (var coul : Integer) is {
+		if coul < 0 then coul := 0;
+		else if coul > 2 then coul := 0; else{}
+		this.coul := coul;
+	}
+
+
+	def name(verbose: Integer) : String is {
+		aux : String := "Blanc";
+		if verbose then "Inside Couleur ::couleur".println(); else {}
+		if this.coul = 0 then { result := aux;}
+		else { 
+			/* exemple avec deux blocs emvoites qui decl une var
+		        * Ici le aux externe doit etre masque.
+			*/
+			aux : String := "Gris"; 
+			if this.coul = 1 then aux := "Noir"; else {}
+			result := aux;
+			}
+		}
+
+	def estGris() : Integer is {
+		"Inside Couleur::estGris".println();
+		result := this.coul = 2;
+	}
+
+}
+		

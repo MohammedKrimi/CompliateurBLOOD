@@ -1,0 +1,16 @@
+//false
+{
+
+
+if true;
+if true then sta:="CC";
+if true else sta:= "cc";
+
+
+then sta := "a";
+
+else sta:="b";
+
+if a : Integer := 1;
+
+}

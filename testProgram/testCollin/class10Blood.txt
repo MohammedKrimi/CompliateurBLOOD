@@ -1,0 +1,60 @@
+//true
+
+{		/* on rentre dans le bloc d'instruction */
+
+	
+
+	true : Integer := 1;
+	
+	p1: Point := new Point(1,5, "p1");
+	p2: Point := new Point(2,3,"p2");
+	p3: Point := new Point(0,0,"p3");
+	
+	o : PointColore := new PointColore(50, 100, CouleurFactory.noir() );
+	o2: Point;
+	
+	pn : PointNoir := new PointNoir(+1,-1);
+	dp : DefaultPoint := new DefaultPoint();
+	
+	p2.move( p1.getx(), p1.gety(), true);
+	o.setName("origine");
+	p2.move(p1.getx() - 2*5-3, p1.gety(), true); 
+	o.print(true);
+	p2.print(true);
+	
+	o2 := o.clone();
+	o2.print(true);
+	
+	o2.clone().move(54,36,0).print(true);
+	o.allClones();
+	
+	o2:= p1.clone();
+	o2.move(+2,-3,0);
+	p1.print(O);
+	o2.clone();
+	p1.allClones();
+	
+	"Fin de la seconde liste\n".println();
+
+	"test(Point,PointColore, PointNoir)".println();
+	
+	Test.test(p1,o,pn);
+
+	"test(PointNoir,PointNoir,PointNoir)".println();
+	
+	Test.test(pn,pn,pn);
+	
+	p1 := pn; /* affectation entre pointeur */
+	
+	Test.test2(o);
+	Test.test2(pn);
+	
+	o := pn;
+
+	"test(PointNoir, PointNoir, PointNoir)".println();
+	
+	Test.test(p1,o,pn);
+	Test.test2(o);
+	Test.test2(pn);
+	"\nDone".println();
+}

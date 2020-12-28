@@ -1,0 +1,5 @@
+//true
+{
+ a : Integer;
+a:= new Integer(120);
+}

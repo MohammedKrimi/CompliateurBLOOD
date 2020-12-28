@@ -1,0 +1,4 @@
+//true
+{
+while True do True:=True-1;
+}

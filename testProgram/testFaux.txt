@@ -1,0 +1,6 @@
+//false
+class Point( var xc : Integer, var yc : Integer, var name : String)
+is {
+e : Integer := 1
+.();
+}

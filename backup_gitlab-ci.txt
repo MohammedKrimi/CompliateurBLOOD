@@ -1,0 +1,153 @@
+image: java:latest
+
+variables:
+  JAVA_RUN: "/usr/lib/jvm/java-8-openjdk-amd64/bin/java"
+  JAVA_COMPILE: "/usr/lib/jvm/java-8-openjdk-amd64/bin/javac"
+  CLASS_PATH: "-classpath antlr-3.5.2-complete.jar:."
+  GRAM_NAME: "Gram3.g"
+  ANTLR_NAME: "antlr-3.5.2-complete.jar"
+  
+
+
+stages:
+  - build
+  - execute
+  - class_blood
+  - blood
+
+build:
+  stage: build
+  script:
+    - $JAVA_RUN -jar $ANTLR_NAME $GRAM_NAME
+    - $JAVA_COMPILE $CLASS_PATH *.java
+  artifacts:
+    paths:
+     - Test*
+     - Gram*
+
+
+test_vide:
+  stage: execute
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "testProgram/prog2.txt"
+
+test_class_vide:
+  stage: execute
+  script:
+    - $JAVA_RUN $CLASS_PATH Test "testProgram/prog1.txt"
+
+test_operation_base:
+  stage: execute
+  script:
+    - $JAVA_RUN $CLASS_PATH Test "testProgram/prog3.txt"
+    
+test_4:
+  stage: execute
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "testProgram/prog4.txt"
+
+test_5:
+  stage: execute
+  script:
+    - $JAVA_RUN $CLASS_PATH Test "testProgram/prog5.txt"
+
+test_6:
+  stage: execute
+  script:
+    - $JAVA_RUN $CLASS_PATH Test "testProgram/prog6.txt"    
+
+test_7:
+  stage: execute
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "testProgram/prog7.txt"
+
+test_8:
+  stage: execute
+  script:
+    - $JAVA_RUN $CLASS_PATH Test "testProgram/prog8.txt"
+
+test_9:
+  stage: execute
+  script:
+    - $JAVA_RUN $CLASS_PATH Test "testProgram/prog9.txt"
+
+test_10:
+  stage: execute
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "testProgram/prog10.txt"
+
+test_11:
+  stage: execute
+  script:
+    - $JAVA_RUN $CLASS_PATH Test "testProgram/prog11.txt"
+
+test_12:
+  stage: execute
+  script:
+    - $JAVA_RUN $CLASS_PATH Test "testProgram/prog12.txt"   
+
+test_faux: 
+  stage: execute
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "testProgram/testFaux.txt"
+
+test_2faux:
+  stage: execute
+  script:
+    - $JAVA_RUN $CLASS_PATH Test "testProgram/test2Faux.txt"
+
+test_class1Blood: 
+  stage: class_blood
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "testProgram/testCollin/class1Blood.txt"
+
+test_class2Blood: 
+  stage: class_blood
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "testProgram/testCollin/class2Blood.txt"
+
+test_class3Blood: 
+  stage: class_blood
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "testProgram/testCollin/class3Blood.txt"
+
+test_class4Blood: 
+  stage: class_blood
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "testProgram/testCollin/class4Blood.txt"
+
+test_class5Blood: 
+  stage: class_blood
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "testProgram/testCollin/class5Blood.txt"  
+
+test_class6Blood: 
+  stage: class_blood
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "testProgram/testCollin/class6Blood.txt"
+
+test_class7Blood: 
+  stage: class_blood
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "testProgram/testCollin/class7Blood.txt"
+
+test_class8Blood: 
+  stage: class_blood
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "testProgram/testCollin/class8Blood.txt"
+
+test_class9Blood: 
+  stage: class_blood
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "testProgram/testCollin/class9Blood.txt"
+
+test_class10Blood: 
+  stage: class_blood
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "testProgram/testCollin/class10Blood.txt"
+
+
+test_final: 
+  stage: blood
+  script: 
+    - $JAVA_RUN $CLASS_PATH Test "testProgram/testCollin/blood_final.txt"

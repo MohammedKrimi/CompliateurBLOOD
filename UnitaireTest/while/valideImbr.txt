@@ -1,0 +1,6 @@
+//true
+{
+while True do 
+	while True do 
+		while True do Fase := False + 1;
+}

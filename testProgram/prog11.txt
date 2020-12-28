@@ -1,0 +1,23 @@
+//true
+class Test(var x: Integer) extends String is {
+
+var ida: Integer; 
+
+var idb: Integer := 1;
+
+def test(var c: Integer) is {
+	while idb do {
+		idb := idb +1;
+		idb := idb/3 + 5;
+	}
+}
+def Test (var c : Integer) is {
+	x.println();
+	x.print(5,5);
+	(x+3);
+	(as Int : x+3);
+}
+
+def test2(var c: Integer) : Test := idb+2; 
+
+}

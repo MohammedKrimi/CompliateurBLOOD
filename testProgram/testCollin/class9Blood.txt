@@ -1,0 +1,25 @@
+//true
+
+class A2() extends A is {
+	
+	var v : String; /* masque le champ v de la classe A*/
+
+	def A2() : A() is {this.v := "hello";}
+	
+	def override f() is { "A2::f()\n".print();}
+	
+	def g() is {
+		
+		this.v := "world";
+		/* par défault il s'agit du champ de A2*/
+		
+		(as A : this).v := 1; /* c'est un caste en A, v a le champ de A*/
+		
+		this.f();
+		
+		(as A : this).f();
+	}
+	
+
+	def override h(x : Integer, y : Integer) : Integer := super.h(x,y);
+}
